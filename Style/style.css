@@ -52,39 +52,41 @@
   /* Nav Styling */
 
   .main-head{
-    width: 95%;
-    margin: 0 auto;
+    width: 100%;
   }
 
 nav{
     min-height: 10vh;
     width: 100%;
+    padding: 0 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
-nav .logo{
-  width: 45%;
+
+.nav-links{
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo ul{
+.nav-links ul{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo ul li{
+.nav-links ul li{
   margin-right: 3.5rem;
   cursor: pointer;
 }
 
-.logo ul li a:hover{
+.nav-links ul li a:hover{
   color: #272727;
 }
 
@@ -102,8 +104,6 @@ ul#navigation ul{
   position: absolute;
   z-index: 10;
   width: 15rem;
-  /* top: -5;
-  left: 200px; */
   background:#FFFFFF;
   border-radius: 10px;
   box-shadow:1px 1px 3px #ccc;
@@ -116,9 +116,6 @@ ul#navigation ul li {
   justify-content: space-around;
 }
 
-/* ul#navigation ul li img{
-  display: fle;
-} */
 
 ul#navigation li:hover > ul{
   visibility:visible;
@@ -146,6 +143,7 @@ ul#navigation li:hover > ul{
   background: none;
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 .cta-btn:hover{
@@ -153,29 +151,41 @@ ul#navigation li:hover > ul{
   border: 2px solid #272727 ;
 }
 
+.burger{
+  display: none;
+}
+
+.burger div{
+  width: 40px;
+  height: 4px;
+  background-color: #151515;
+  margin: 5px;
+}
+
 /* Hero Styling */
 
 .hero-container{
   height: 85vh;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+  /* padding: 3rem; */
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
 .hero-banner{
   width: 60%;
-  height: 60vh;
-  /* background: #456734; */
-  padding: 5rem;
+  min-height: 70vh;
+  margin-top: 5rem;
 }
 
+
 .hero-banner p{
-  line-height: 2.5rem;
-  font-size: 2rem;
-  margin: 5rem 0;
+  line-height: 3.5rem;
+  font-size: 2.5rem;
+  margin: 3rem 0;
 }
 
 .banner-cta-btn{
@@ -198,8 +208,6 @@ ul#navigation li:hover > ul{
 .hero-img{
   width: 40%;
   height: 80vh;
-  margin-left: 6rem;
-  /* background: #343434; */
 }
 
 .hero-img img{
@@ -208,8 +216,12 @@ ul#navigation li:hover > ul{
   object-fit: contain;
 }
 
+#img2{
+  display: none;
+}
+
 .hero-footer{
-  margin-top: 10rem;
+  margin: 5rem 5rem 5rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -226,4 +238,12 @@ footer{
 
 footer a{
   color: #151515;
+}
+
+/* Mobile Design */
+
+@media screen and (max-width: 768px){
+  
+
+
 }
